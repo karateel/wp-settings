@@ -6,6 +6,14 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 module.exports = {
     entry: './src/index.js',
     mode: "development",
+    devServer: {
+        historyApiFallback: true,
+        contentBase: path.resolve(__dirname, 'dist'),
+        open: true,
+        compress: true,
+        hot: true,
+        port: 8080,
+    },
     output: {
         filename: 'main-[hash].js',
         path: path.resolve(__dirname, 'dist'),
