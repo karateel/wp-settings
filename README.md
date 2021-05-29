@@ -1,0 +1,2 @@
+# wp-settings
+Configurating WebPack 
